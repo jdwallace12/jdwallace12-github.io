@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var skipath = {
         entry: {
-            curviness: 1.25,
+            curviness: 2.25,
             autoRotate: true,
             values: [{
                 x: 100,
@@ -9,7 +9,7 @@ $(document).ready(function() {
             }]
         },
         leave: {
-            curviness: 1.25,
+            curviness: 2.55,
             autoRotate: true,
             values: [{
                 x: $(window).width() + 300,
