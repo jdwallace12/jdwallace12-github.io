@@ -3,18 +3,17 @@ $(document).ready(function() {
         entry: {
             curviness: 2.25,
             autoRotate: true,
-            values: [{
-                x: 100,
-                y: 0
-            }]
+            values: [
+            {x: 90, y: 0}
+            ]
         },
         leave: {
             curviness: 2.55,
             autoRotate: true,
-            values: [{
-                x: $(window).width() + 300,
-                y: 0
-            }]
+            values: [
+            {x: 300, y: 100},
+            {x:400, y:100}
+        ]
         }
     };
     // init controller
@@ -38,7 +37,7 @@ $(document).ready(function() {
     // build scene
     var scene = new ScrollMagic.Scene({
             triggerElement: "#trigger",
-            duration: 500,
+            duration: 300,
             offset: 0
         })
         .setPin("#target")
