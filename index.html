@@ -18,27 +18,35 @@ layout: default
     {% include trees_svg.html %}
 </section>
 <div class="ui container">
-    <h3>Selected Work</h3>
-    <div class="ui four doubling link cards">
-        <div class="card">
-            <div class="image">
-                <img src="/images/skinsandseeds.png">
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="/images/magnetic-poetry.png">
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="/images/bumblebean-home.png">
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="/images/appneta.png">
-            </div>
-        </div>
+    <h3>Latest Projects</h3>
+    <div class="Collage">
+        <img src="/images/appneta.png">
+        <img src="/images/skinsandseeds.png">
+        <img src="/images/wedding.png">
+        <img src="/images/appneta.png">
+        <img src="/images/skinsandseeds.png">
+        <img src="/images/wedding.png">
+        <img src="/images/appneta.png">
+    
     </div>
 </div>
+<script type="text/javascript">
+// All images need to be loaded for this plugin to work so
+// we end up waiting for the whole window to load in this example
+$(window).load(function() {
+    $(document).ready(function() {
+        collage();
+        $('.Collage').collageCaption();
+    });
+});
+
+
+// Here we apply the actual CollagePlus plugin
+function collage() {
+    $('.Collage').removeWhitespace().collagePlus({
+        'targetHeight': 200,
+        'effect': 'effect-2',
+        'direction': 'horizontal'
+    });
+};
+</script>
