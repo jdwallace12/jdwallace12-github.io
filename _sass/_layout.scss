@@ -97,12 +97,13 @@
             width: 28px;
         }
     }
-
+.grey-hero {
+    background-color: #eef2f3;
+}
 .pine-wrap {
-    // position: relative;
-    // top: -54vh;
-    // margin-bottom: -54vh;
-    // z-index: -1;
+    position: relative;
+    margin-top: -48vh;
+    z-index: -1;
 }
 
 #clouds {
