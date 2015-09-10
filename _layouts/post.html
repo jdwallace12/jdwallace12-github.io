@@ -1,15 +1,52 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="ui masthead center aligned segment" style="background-image: url('{{ page.featured-image }}'); background-size:cover;">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+    <div class="ui text container">
+        <header class="post-title">
+            <h1 class="header text-shadow">{{ page.title }}</h1>
+        </header>
+    </div>
 </div>
+
+<div class="ui text container">
+    <article class="post-content">
+        <section class="section">
+            {{ content }}
+            <section class="subsection">
+            </section>
+        </section>
+
+    </article>
+    <div class="ui vertical stripe center aligned segment" style="padding:60px 0;">
+        {% if page.previous %}
+        <a class="ui labeled icon button" href="{{ page.previous.url }}"><i class="left arrow icon"></i>Previous
+            Post</a>
+        {% endif %}
+        {% if page.next %}
+        <a class="ui right labeled icon button" href="{{ page.next.url }}"><i class="right arrow icon"></i>Next Post</a>
+        {% endif %}
+    </div>
+
+    <section class="section">
+        <div class="ui items">
+            <div class="item">
+                <a class="ui small image">
+                    <img src="">
+                </a>
+
+                <div class="content">
+                    <h4 class="header">
+                        {% if page.author %}
+                        {{ page.author }}
+                        {% endif%}
+                    </h4>
+
+                    <div class="description">
+                        <p>{{ page.author-bio }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

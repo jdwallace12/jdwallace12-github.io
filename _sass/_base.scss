@@ -36,6 +36,9 @@ ul, ol, dl, figure,
 }
 
 
+.post-content p {
+  font-family: 'Lora', serif!important;
+}
 
 /**
  * Images
@@ -79,12 +82,15 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6{
+
+    font-family: 'Oswald', sans-serif!important;
+ 
 }
 
-
-
+.post-title {
+  font-family: 'Oswald', sans-serif!important;  
+}
 /**
  * Links
  */
