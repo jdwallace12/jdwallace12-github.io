@@ -235,9 +235,6 @@ layout: default
         <section id="cd-timeline">
             {% for post in site.posts limit:8 %}
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img">
-                </div>
-                <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
                     <h2><a href="{{ post.url }}" class="header">{{ post.title }}</a></h2>
                     <p>{{ post.description}}</p>
