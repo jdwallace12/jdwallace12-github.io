@@ -1,58 +1,87 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
     margin: 0;
     padding: 0;
 }
 
 
-
 /**
  * Basic styling
  */
+
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
+    color: #454553!important;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
 
-
 .post-content p {
-  font-family: 'Lora', serif!important;
+    font-family: 'Lora', serif!important;
 }
+
 
 /**
  * Images
  */
+
 img {
     max-width: 100%;
     vertical-align: middle;
 }
 
+p {
+    color: #454553!important;
+}
 
 
 /**
  * Figures
  */
+
 figure > img {
     display: block;
 }
@@ -62,57 +91,61 @@ figcaption {
 }
 
 
-
 /**
  * Lists
  */
-ul, ol {
+
+ul,
+ol {
     margin-left: $spacing-unit;
 }
 
 li {
     > ul,
     > ol {
-         margin-bottom: 0;
+        margin-bottom: 0;
     }
 }
-
 
 
 /**
  * Headings
  */
-.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6{
 
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
     font-family: 'Oswald', sans-serif!important;
- 
 }
 
 .post-title {
-  font-family: 'Oswald', sans-serif!important;  
+    font-family: 'Oswald', sans-serif!important;
 }
+
+
 /**
  * Links
  */
+
 a {
-    color: $brand-color;
+    color: #4AA0D5;
     text-decoration: none;
-
     &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: darken(#4AA0D5, 15%);
     }
 }
 
-
-
+.hvr-underline-from-center:before {
+    height: 2px!important;
+    background: #2879ab!important;
+}
 /**
  * Blockquotes
  */
+
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
@@ -120,17 +153,16 @@ blockquote {
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
-
-    > :last-child {
+    >:last-child {
         margin-bottom: 0;
     }
 }
 
 
-
 /**
  * Code formatting
  */
+
 pre,
 code {
     font-size: 15px;
@@ -146,7 +178,6 @@ code {
 pre {
     padding: 8px 12px;
     overflow-x: scroll;
-
     > code {
         border: 0;
         padding-right: 0;

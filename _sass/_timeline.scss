@@ -78,14 +78,15 @@ Main components
 }
 
 .cd-timeline-img {
-    border: 6px solid #98D4B9;
-    background: #FFFFFF;
+    border: 10px solid rgba(235, 88, 111, 0.67);
+    background: transparent;
     position: absolute;
     top: 0;
     left: 0;
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    top: 10px;
  
     img {
         display: block;

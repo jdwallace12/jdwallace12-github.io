@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Welcome to Jekyll!
+title:  Welcome to Jekyll or not I really don't care!
 date:   2015-08-13 20:08:05
 categories: jekyll update
 featured-image: http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/10/mountains.jpg
