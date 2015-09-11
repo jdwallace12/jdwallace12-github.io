@@ -20,6 +20,9 @@ Main components
     padding: 2em 0;
     margin-top: 2em;
     margin-bottom: 2em;
+    a {
+        color: #4AA0D5;
+    }
     &::before {
         /* this is the vertical line */
         
@@ -170,6 +173,9 @@ Main components
     .cd-date {
         float: left;
         padding: .8em 0;
+        a {
+            color: #4AA0D5;
+        }
         @media only screen and (max-width: 1170px) {
             padding: 2.8em 0;
         }
