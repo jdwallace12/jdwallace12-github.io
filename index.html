@@ -2,14 +2,6 @@
 layout: default
 ---
 <div class="ui vertical masthead center aligned segment" style="border:none;">
-    <div id="clouds">
-        <div class="cloud x1"></div>
-        <!-- Time for multiple clouds to dance around -->
-        <div class="cloud x2"></div>
-        <div class="cloud x3"></div>
-        <div class="cloud x4"></div>
-        <div class="cloud x5"></div>
-    </div>
     {% include mountain_svg.html %}
     <div id="target">
         <img id="skier" src="/images/skier-spray.png">
@@ -236,26 +228,26 @@ layout: default
             </div>
         </div>
     </div>
-    <h3 class="ui horizontal divider header homepage">Blog</h3>
-    <section id="cd-timeline">
-        {% for post in site.posts limit:8 %}
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img">
-                
-            </div>
-            <!-- cd-timeline-img -->
-            <div class="cd-timeline-content">
-                <h2><a href="{{ post.url }}" class="header">{{ post.title }}</a></h2>
-                <p>{{ post.description}}</p>
-                <span class="cd-date"><a href="{{ post.url}}">{{ post.date | date: "%b %-d, %Y" }}</a></span>
-            </div>
-            <!-- cd-timeline-content -->
-        </div>
-        {% endfor %}
-    </section>
 </div>
-<div class="pine-wrap">
-    {% include pine-trees.html %}
+<div class="forest-bg">
+    <section class="section ui container">
+        <h3 class="ui horizontal divider header homepage">Blog</h3>
+        <section id="cd-timeline">
+            {% for post in site.posts limit:8 %}
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img">
+                </div>
+                <!-- cd-timeline-img -->
+                <div class="cd-timeline-content">
+                    <h2><a href="{{ post.url }}" class="header">{{ post.title }}</a></h2>
+                    <p>{{ post.description}}</p>
+                    <span class="cd-date"><a href="{{ post.url}}">{{ post.date | date: "%b %-d, %Y" }}</a></span>
+                </div>
+                <!-- cd-timeline-content -->
+            </div>
+            {% endfor %}
+        </section>
+    </section>
 </div>
 <script>
 $('.special.cards .image').dimmer({

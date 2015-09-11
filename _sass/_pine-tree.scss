@@ -4,3 +4,11 @@
     z-index: -1;
     width: 100%;
 }
+
+.forest-bg {
+    background-image: url(/images/svg/forest.svg);
+    width: 100%;
+    background-position: center -420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
