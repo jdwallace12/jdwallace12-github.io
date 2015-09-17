@@ -138,3 +138,12 @@
         width: 130px;
         height: 130px;
     }
+    
+    .blogroll-fetaure-image {
+        transform: scale(1);
+        transition: all .5s ease;
+        &:hover {
+            transform: scale(1.5);
+        }
+
+    }
