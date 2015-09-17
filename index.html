@@ -168,11 +168,16 @@ layout: default
         <section id="cd-timeline">
             {% for post in site.posts limit:8 %}
             <div class="cd-timeline-block">
+                
                 <div class="cd-timeline-content">
+                    <a href="{{ post.url }}">
+                        <img src="{{ post.featured-image }}" />
+                    </a>
                     <h2><a href="{{ post.url }}" class="header">{{ post.title }}</a></h2>
                     <p>{{ post.description}}</p>
                     <span class="cd-date"><a href="{{ post.url}}">{{ post.date | date: "%b %-d, %Y" }}</a></span>
                 </div>
+
                 <!-- cd-timeline-content -->
             </div>
             {% endfor %}

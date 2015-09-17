@@ -5,6 +5,7 @@
     section.article-section {
         padding: 4rem 0rem;
     }
+    
     section.subsection {
         padding-top: 30px 0px;
     }
@@ -112,7 +113,12 @@
         color: #ffffff;
         font-size: 5rem;
         margin-top: 4em;
+        text-transform: capitalize;
+        @media (max-width: 980px) {
+            font-size: 3rem
+        }
         @media (max-width: 680px) {
+            font-size: 2rem;
             margin-top: 4rem;
         }
     }
@@ -125,7 +131,7 @@
         line-height: 5;
         color: #454553;
     }
-
+    
     .author-image {
         border-radius: 50%;
         padding: 10px;
