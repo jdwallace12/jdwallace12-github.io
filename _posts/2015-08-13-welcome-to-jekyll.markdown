@@ -4,6 +4,10 @@ title:  Welcome to Jekyll or not I really don't care!
 date:   2015-08-13 20:08:05
 categories: jekyll update
 featured-image: http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/10/mountains.jpg
+comments: true
+author: John Wallace
+author-image: /images/john-wallace.jpg
+author-bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam voluptates, placeat libero repellendus quasi architecto ratione hic voluptas id error fugiat iste repellat aut iusto rerum a vel aliquam.
 ---
 #Sick Line Bro
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

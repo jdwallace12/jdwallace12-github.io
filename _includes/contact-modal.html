@@ -1,0 +1,32 @@
+<div class="ui modal" id="contact-form">
+    <div class="header">Send a message</div>
+    <div class="content">
+        <form class="ui form" id="form" action="https://getsimpleform.com/messages?form_api_token=e745ca4cc1017d0eecb82dd746f22565" method="post">
+            <!-- all your input fields here.... -->
+            <div class="field">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <input class="ui green button" type='submit' value='Send' />
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+  $('#form')
+  .form({
+    on: 'blur',
+    fields: {
+      name     : 'empty',
+      email   : 'empty',
+      message : 'empty'
+    }
+  })
+;
+</script>

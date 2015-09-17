@@ -16,28 +16,25 @@ layout: default
         <section class="subsection">
         </section>
     </article>
-    <div class="ui vertical stripe center aligned segment" style="padding:60px 0;">
-        {% if page.previous %}
-        <a class="ui labeled icon button" href="{{ page.previous.url }}"><i class="left arrow icon"></i>Previous
-            Post</a> {% endif %} {% if page.next %}
-        <a class="ui right labeled icon button" href="{{ page.next.url }}"><i class="right arrow icon"></i>Next Post</a> {% endif %}
-    </div>
     <section class="section">
         <div class="ui items">
             <div class="item">
-                <a class="ui small image">
-                    <img src="">
-                </a>
+                {% if page.author-image %}
+                    <img class="author-image" src="{{ page.author-image}}" />
+                {% endif %}
                 <div class="content">
-                    <h4 class="header">
-                        {% if page.author %}
-                        {{ page.author }}
-                        {% endif%}
-                    </h4>
+                    {% if page.author %}
+                    <h4 class="header">{{ page.author}}</h4>
+                    {% endif %}
                     <div class="description">
+                          {% if page.author-bio %}
                         <p>{{ page.author-bio }}</p>
+                          {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    {% if page.comments %}
+    {% include disqus.html %}
+    {% endif %}
