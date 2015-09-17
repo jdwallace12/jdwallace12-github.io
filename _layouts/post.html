@@ -10,13 +10,12 @@ layout: default
 </div>
 <div class="ui text container">
     <article class="post-content">
-        <section class="subsection">
-        </section>
+        <section class="article-section">
         {{ content }}
-        <section class="subsection">
         </section>
     </article>
-    <section class="section">
+    <div class="ui section divider"></div>
+    <section>
         <div class="ui items">
             <div class="item">
                 {% if page.author-image %}
@@ -35,6 +34,9 @@ layout: default
             </div>
         </div>
     </section>
+    <section class="article-section">
     {% if page.comments %}
     {% include disqus.html %}
     {% endif %}
+    </section>
+</div>
