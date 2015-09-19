@@ -47,13 +47,11 @@ layout: default
         </div>
     </div>
 </div>
-
-
 <div class="forest-bg">
     <section class="section ui container">
         <h3 class="ui horizontal divider header homepage">Latest From The Blog</h3>
         <section id="cd-timeline">
-            {% for post in site.posts limit:8 %}
+            {% for post in site.posts limit:5 %}
             <div class="cd-timeline-block">
                 
                 <div class="cd-timeline-content">
