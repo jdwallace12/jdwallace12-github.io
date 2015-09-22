@@ -1,0 +1,36 @@
+---
+layout: default
+body-class: grey-hero
+---
+
+<div class="ui vertical stripe container segment">
+    <h3 class="ui header">Blog</h3>
+
+    <div class="ui two column doubling grid">
+        {% for post in site.posts %}
+        <div class="column">
+            <div class="ui fluid card">
+                <a class="image" href="{{ post.url }}">
+                    <img src="{{ post.featured-image }}">
+                </a>
+
+                <div class="content">
+                    <a href="{{ post.url }}" class="header">{{ post.title }}</a>
+
+                    <div class="meta">
+                     <span class="date">
+                     {{ post.date | date: "%b %-d, %Y" }}
+                        </span>
+                    </div>
+                </div>
+                <div class="extra content">
+                  <span>
+                  <i class="tag icon"></i>{{post.categories}}
+                  </span>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
