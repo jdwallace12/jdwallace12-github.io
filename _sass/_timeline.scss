@@ -140,7 +140,7 @@ Main components
     background: white;
     border-radius: 0.25em;
     padding: 1em;
-    border-bottom: 1px solid #CECECE;
+    box-shadow: 0 1px 5px #678F7D;
     &:after {
         content: "";
         display: table;
@@ -175,9 +175,10 @@ Main components
         padding: .8em 0;
         a {
             color: #4AA0D5;
+            font-weight: 800;
         }
         @media only screen and (max-width: 1170px) {
-            padding: 2.8em 0;
+            // padding: 2.8em 0;
         }
     }
     &::before {
@@ -195,7 +196,7 @@ Main components
 @media only screen and (min-width: 768px) {
     .cd-timeline-content {
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
         .cd-read-more,
         .cd-date {

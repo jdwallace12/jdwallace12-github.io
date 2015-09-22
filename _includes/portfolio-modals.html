@@ -1,0 +1,39 @@
+
+<!-- appneta modal -->
+<div class="ui modal" id="appneta-modal">
+    <i class="close icon"></i>
+    <div class="image content">
+        <div class="ui huge image">
+            <img src="/images/appneta-featured-image.png">
+        </div>
+        <div class="description">
+            <div class="ui header">AppNeta</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
+        </div>
+    </div>
+</div>
+<!-- end appneta modal -->
+<!-- bumblebean modal -->
+<div class="ui modal" id="bumblebean-modal">
+    <i class="close icon"></i>
+    <div class="image content">
+        <div class="ui huge image">
+            <img src="/images/bumblebean-home.png">
+        </div>
+        <div class="description">
+            <div class="ui header">Bumblebean</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
+        </div>
+    </div>
+</div>
+<!-- end bumblebean modal -->
+<script>
+$(document).ready(function() {
+    $('#appneta-modal-trigger').on('click', function() {
+        $('#appneta-modal').modal('show');
+    });
+    $('#bumblebean-modal-trigger').on('click', function() {
+        $('#bumblebean-modal').modal('show');
+    });
+});
+</script>
