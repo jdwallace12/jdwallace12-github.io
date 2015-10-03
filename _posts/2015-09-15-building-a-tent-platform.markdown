@@ -12,4 +12,12 @@ author-bio: I love playing outside, fort building, and skiing powder with my wif
 ---
 #Building a Tent Platform
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aut, consequatur harum? Velit sequi reiciendis earum qui a facilis, ab quis quidem, eius recusandae corporis, harum blanditiis explicabo ea inventore!
-
+<img src="/images/fort/fort1.jpg" alt="" class="post-photo">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nisi quos, praesentium unde harum modi consequatur eveniet sequi architecto, facere aliquam perferendis laborum! Asperiores rerum vitae eum dolor illum dolorum?
+<img src="/images/fort/fort2.jpg" alt="" class="post-photo">
+<img src="/images/fort/fort3.jpg" alt="" class="post-photo">
+<img src="/images/fort/fort4.jpg" alt="" class="post-photo">
+<img src="/images/fort/fort5.jpg" alt="" class="post-photo">
+<img src="/images/fort/fort6.jpg" alt="" class="post-photo">
+<img src="/images/fort/fort7.jpg" alt="" class="post-photo">
+<img src="/images/fort/fort8.jpg" alt="" class="post-photo">
