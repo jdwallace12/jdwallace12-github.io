@@ -109,11 +109,16 @@
         }
     }
     
+    .post-title {
+        position: relative;
+    }
     .post-title h1.header {
         color: #ffffff;
-        font-size: 5rem;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        font-size: 5.2rem;
         margin-top: 4em;
         text-transform: capitalize;
+        text-align: center;
         @media (max-width: 980px) {
             font-size: 3rem
         }
@@ -122,6 +127,22 @@
             margin-top: 4rem;
         }
     }
+     .subheader {
+        color: #ffffff;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        font-size: 2rem;
+        margin-top: 4em;
+        text-transform: capitalize;
+        text-align: center;
+        @media (max-width: 980px) {
+            font-size: 3rem
+        }
+        @media (max-width: 680px) {
+            font-size: 2rem;
+            margin-top: 4rem;
+        }
+    }
+
     
     .ui.segment {
         border: none!important;

@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-<div class="ui masthead center aligned segment" style="background-image: url('{{ page.featured-image }}'); background-size:cover;">
+<div class="ui masthead center aligned segment parallax" data-image="{{ page.featured-image }}" data-cover-ratio="1" data-height="1300">
     <div class="ui text container">
         <header class="post-title">
             <h1 class="header text-shadow">{{ page.title }}</h1>
+            <h3 class="subheader text-shadow">{{ page.subtitle }}</h1>
         </header>
     </div>
 </div>
@@ -41,3 +42,20 @@ layout: default
     {% endif %}
     </section>
 </div>
+<script>
+$(document).ready(function() {
+    $(window).scroll(headerParallax);
+    function headerParallax() {
+        var st = $(window).scrollTop();
+        var headerScroll = $('.post-title');
+        if (st < 500) {
+            headerScroll.css('opacity', 1 - st / 300);
+            headerScroll.css({
+                '-webkit-transform': 'translateY(' + st / 7 + '%)',
+                '-ms-transform': 'translateY(' + st / 7 + '%)',
+                transform: 'translateY(' + st / 7 + '%)'
+            });
+        }
+    }
+});
+</script>

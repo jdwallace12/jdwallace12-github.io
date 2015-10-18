@@ -10,21 +10,26 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.0/plugins/animation.gsap.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="/javascripts/mountain-scene.js"></script>
-    {% include header.html %}
-    {% include contact-modal.html %}
+    <script src="/javascripts/parallax.min.js"></script>
+    {% include header.html %} {% include contact-modal.html %}
     <div class="page-content">
         <div class="wrapper">
             {{ content }}
         </div>
     </div>
     {% include footer.html %}
-
     <script type="text/javascript">
-    $('#contact-trigger').on('click', function() {
-        $('#contact-form').modal('show');
+    $(document).ready(function() {
+        $('#contact-trigger').on('click', function() {
+            $('#contact-form').modal('show');
+        });
+        new WOW().init();
+      
+
+      $('.parallax').imageScroll();
     });
-    new WOW().init();
     </script>
 </body>
 
