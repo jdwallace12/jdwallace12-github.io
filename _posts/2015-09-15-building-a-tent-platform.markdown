@@ -13,7 +13,7 @@ author-bio: I love playing outside, fort building, and skiing powder with my wif
 ---
 #{{page.title}}
 
-###{{page.subtitle}}
+####{{page.subtitle}}
 I have always wanted to build some sort of fort at Kezar but have never gotten around to doing do since most of my time is spent lazing around the lake. The show Treehouse Masters did get me jazzed to build something on the land this year. Intilially, I wanted to build a treehouse but researching treehouse construction and the costs, I dedcided I needed a lower budget alternative.
 Having a wall tent from lively out west, I figured to have a nice cost effecient solition until I could build something more substational.  For those who don't know a wall tent is a large canvas tent with a wood stove inside.  So I set out to build a platform that it could sit on top and be level and dry.
 <img src="/images/fort/fort1.jpg" alt="" class="post-photo">
