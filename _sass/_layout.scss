@@ -111,14 +111,21 @@
     
     .post-title {
         position: relative;
+        // padding: 10%;
+
+        // background: rgb(0, 181, 173);
+        // box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        // height: 100vh;
     }
+    
     .post-title h1.header {
         color: #ffffff;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-        font-size: 5.2rem;
-        margin-top: 4em;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        font-size: 4.2rem;
+        margin-top: 39vh;
         text-transform: capitalize;
         text-align: center;
+        letter-spacing: 2px;
         @media (max-width: 980px) {
             font-size: 3rem
         }
@@ -127,12 +134,17 @@
             margin-top: 4rem;
         }
     }
-     .subheader {
+    
+    .light {
+        color: #fff!important;
+    }
+    
+    .subheader {
         color: #ffffff;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         font-size: 2rem;
-        margin-top: 4em;
-        text-transform: capitalize;
+        font-weight: 100;
+        margin-top: 3rem;
         text-align: center;
         @media (max-width: 980px) {
             font-size: 3rem
@@ -142,7 +154,6 @@
             margin-top: 4rem;
         }
     }
-
     
     .ui.segment {
         border: none!important;
