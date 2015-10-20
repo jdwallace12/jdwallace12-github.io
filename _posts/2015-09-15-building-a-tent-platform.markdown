@@ -5,7 +5,7 @@ subtitle: Building a Wall Tent Platform
 description:  I have a walltent I have not used in a while, so let build a sweet little platform for it to rest upon.
 date:   2015-09-16 20:08:05
 categories: forts
-featured-image: /images/fort/fort4.jpg
+featured-image: /images/tent.jpg
 comments: true
 author: John Wallace
 author-image: /images/john-wallace.jpg
