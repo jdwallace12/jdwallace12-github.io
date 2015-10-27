@@ -18,7 +18,7 @@ Having a wall tent from lively out west, I figured to have a nice cost effecient
 
 ###Scouting a Location
 
-With the potential land for the structure being situated on a hill with pockets of vernal marshy areas, made 
+With the potential land for the structure being situated on a hill with pockets of vernal marshy areas, made finding
 
 ###Hauling Shit
 

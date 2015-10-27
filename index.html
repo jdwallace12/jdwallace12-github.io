@@ -7,11 +7,11 @@ layout: default
     <div id="target">
         <img id="skier" src="/images/skier-spray.png">
     </div>
-    <div class="ui text container">
-        <h1 class="ui header">
+    <div class="ui text container" id="start">
+        <h1 class="ui header" id="heading">
        John Wallace
       </h1>
-        <h2 >Powder Hound & Web Developer</h2>
+        <h2>Powder Hound & Web Developer</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rerum, veniam est impedit placeat provident! Ea ab quos dolores illum, numquam nostrum blanditiis, vel nobis deleniti impedit recusandae, quibusdam optio.</p>
     </div>
 </div>
@@ -66,4 +66,15 @@ layout: default
     </section>
 </div>
 {% include portfolio-modals.html %}
-
+<script>
+    // init controller
+    var controller = new ScrollMagic.Controller();
+</script>
+<script>
+        // build scene
+        var scene = new ScrollMagic.Scene({
+                            triggerElement: "#start"
+                        })
+                        .setTween("#heading", 0.5, {scale: 2}) // trigger a TweenMax.to tween
+                        .addTo(controller);
+</script>
