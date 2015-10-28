@@ -73,8 +73,9 @@ layout: default
 <script>
         // build scene
         var scene = new ScrollMagic.Scene({
-                            triggerElement: "#start"
+                            triggerElement: "#start",
+                             offset: -350
                         })
-                        .setTween("#heading", 0.5, {scale: 2}) // trigger a TweenMax.to tween
+                        .setTween("#heading", 0.5, {scale: 1.3}) // trigger a TweenMax.to tween
                         .addTo(controller);
 </script>
