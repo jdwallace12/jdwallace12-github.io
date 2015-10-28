@@ -15,7 +15,7 @@ layout: default
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rerum, veniam est impedit placeat provident! Ea ab quos dolores illum, numquam nostrum blanditiis, vel nobis deleniti impedit recusandae, quibusdam optio.</p>
     </div>
 </div>
-<section class="section">
+<section class="section" id="trees-start">
     {% include trees_svg.html %}
 </section>
 <div class="ui container">
@@ -74,8 +74,17 @@ layout: default
         // build scene
         var scene = new ScrollMagic.Scene({
                             triggerElement: "#start",
-                             offset: -350
+                             offset: -150,
+                             duration: 1000
                         })
                         .setTween("#heading", 0.5, {scale: 1.3}) // trigger a TweenMax.to tween
                         .addTo(controller);
+         // build scene
+        var scene = new ScrollMagic.Scene({
+                            triggerElement: "#trees-start",
+                             offset: -150,
+                             duration: 1000
+                        })
+                        .setTween("#trees", 0.5, {scale: 1.3}) // trigger a TweenMax.to tween
+                        .addTo(controller);                
 </script>
