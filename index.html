@@ -2,8 +2,9 @@
 layout: default
 ---
 <div class="ui vertical masthead center aligned segment" style="border:none;">
+    <div class="wow fadeInDownBig" data-wow-duration="2.5s" style="width:100%; position:relative; height:30px; box-shadow: 0px 65px 100px #fff, 0px 25px 100px #fff, 0px 14px 24px #fff;"></div>  
     {% include mountain_svg.html %}
-    <div id="snow"></div>
+    <div id="snow" style="display:none;"></div>
     <div id="target">
         <img id="skier" src="/images/skier-spray.png">
     </div>
@@ -65,26 +66,13 @@ layout: default
     </section>
 </div>
 {% include portfolio-modals.html %}
+
 <script>
-    // init controller
-    var controller = new ScrollMagic.Controller();
-</script>
-<script>
-        // build scene
-        // var scene = new ScrollMagic.Scene({
-        //                     triggerElement: "#start",
-        //                      offset: -150,
-        //                      duration: 600
-        //                 })
-        //                 .setTween("#heading", 0.5, {scale: 1.2}) // trigger a TweenMax.to tween
-        //                 .addTo(controller);
-         // build scene
-        var scene = new ScrollMagic.Scene({
-                            triggerElement: "#trees-start",
-                             offset: -300,
-                             duration: 400
-                        })
-                        .setTween("#trees", 0.5, {scale: 1.33}) // trigger a TweenMax.to tween
-                        .addTo(controller); 
-                                    
+$(document).ready(function(){
+setTimeout(function(){ 
+$("#snow").show();
+}, 4000);
+});
+
+
 </script>

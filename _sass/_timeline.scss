@@ -271,9 +271,9 @@ Main components
 
     .blogroll-fetaure-image {
         transform: scale(1);
-        transition: all .5s ease;
+        transition: all 10.5s ease;
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.4);
         }
 
     }
