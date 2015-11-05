@@ -3,17 +3,21 @@ $(document).ready(function() {
         entry: {
             curviness: 2.25,
             autoRotate: true,
-            values: [
-            {x: 90, y: 0}
-            ]
+            values: [{
+                x: 90,
+                y: 0
+            }]
         },
         leave: {
             curviness: 2.55,
             autoRotate: true,
-            values: [
-            {x: 300, y: 100},
-            {x:400, y:100}
-        ]
+            values: [{
+                x: 300,
+                y: 100
+            }, {
+                x: 400,
+                y: 100
+            }]
         }
     };
     // init controller
@@ -36,13 +40,30 @@ $(document).ready(function() {
 
     // build scene
     var scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger",
-            duration: 300,
-            offset: 0
-        })
-        .setPin("#target")
+        triggerElement: "#trigger",
+        duration: 300,
+        offset: 0
+    })
+
+    .setPin("#target")
         .setTween(tween)
         // .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+    var animateElem = document.getElementById("snow");
+    var scene2 = new ScrollMagic.Scene({
+            triggerElement: "#mountain-bg",
+            offset: 400
+        })
+        .on("enter", function() {
+            // trigger animation by changing inline style.
+            animateElem.style.display = "block";
+        })
+         .on("leave", function() {
+            // trigger animation by changing inline style.
+            animateElem.style.display = "none";
+        })
+  
+        // add indicators (requires plugin)
         .addTo(controller);
 
 });
