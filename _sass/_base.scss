@@ -182,7 +182,7 @@ pre {
         padding-left: 0;
     }
 }
-
-// .page-content .hvr-underline-from-center:before {
-//     height: 2px;
-// }
+ .visible {
+    display: block!important;
+    transition: all 1s ease;
+ }

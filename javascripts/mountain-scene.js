@@ -49,21 +49,4 @@ $(document).ready(function() {
         .setTween(tween)
         // .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
-    var animateElem = document.getElementById("snow");
-    var scene2 = new ScrollMagic.Scene({
-            triggerElement: "#mountain-bg",
-            offset: 400
-        })
-        .on("enter", function() {
-            // trigger animation by changing inline style.
-            animateElem.style.display = "block";
-        })
-         .on("leave", function() {
-            // trigger animation by changing inline style.
-            animateElem.style.display = "none";
-        })
-  
-        // add indicators (requires plugin)
-        .addTo(controller);
-
 });

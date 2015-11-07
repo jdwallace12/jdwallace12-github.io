@@ -6,6 +6,14 @@
             </a>
             <a class="item" href="/#projects-section">Projects</a>
             <a class="item" href="/blog/">Blog</a>
+    
+            <h4 class="ui header post-title-scrolled" style="margin:auto; text-align:center;">
+                <div class="content">
+                    {{ page.title }}
+                    <div class="sub header">{{ page.date | date: "%b %-d, %Y" }}</div>
+                </div>
+            </h4>
+     
             <div class="right item">
                 <div class="ui animated fade teal button" id="contact-trigger" tabindex="0">
                     <div class="visible content">Contact Me</div>
@@ -17,3 +25,23 @@
         </div>
     </div>
 </header>
+<script type="text/javascript">
+jQuery(function($) {
+
+    var $nav = $('.post-title-scrolled');
+    var $win = $(window);
+    var winH = $win.height(); // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $nav.addClass("visible");
+        } else {
+            $nav.removeClass("visible");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+
+});
+
+</script>
