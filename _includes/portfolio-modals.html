@@ -39,6 +39,21 @@
     </div>
 </div>
 <!-- end bumblebean modal -->
+<!-- yogi-jerz modal -->
+<div class="ui fullscreen modal" id="yogi-jerz-modal">
+    <i class="close icon"></i>
+    <div class="image content">
+        <div class="ui massive image">
+            <img src="/images/yogi-jerzbg.png">
+            <img src="/images/yogi-jerz.png">
+        </div>
+        <div class="description">
+            <div class="ui header">Yogi Jerz</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
+        </div>
+    </div>
+</div>
+<!-- end yogi-jerz modal -->
 <script>
 $(document).ready(function() {
     $('#appneta-modal-trigger').on('click', function() {
@@ -46,6 +61,9 @@ $(document).ready(function() {
     });
     $('#bumblebean-modal-trigger').on('click', function() {
         $('#bumblebean-modal').modal('show');
+    });
+    $('#yogi-jerz-modal-trigger').on('click', function() {
+        $('#yogi-jerz-modal').modal('show');
     });
 });
 </script>
