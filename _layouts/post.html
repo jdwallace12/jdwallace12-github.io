@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
+
 <div class="ui masthead center aligned segment parallax" data-image="{{ page.featured-image }}" data-cover-ratio="1" data-height="1200">
+    <div class="hero-overlay">
     <div class="ui text container">
         <header class="post-title">
             <h1 class="header text-shadow">{{ page.title }}</h1>
@@ -9,6 +11,8 @@ layout: default
         </header>
     </div>
 </div>
+</div>
+
 <div class="ui text container">
     <article class="post-content">
         <section class="article-section">
@@ -48,7 +52,9 @@ $(document).ready(function() {
     function headerParallax() {
         var st = $(window).scrollTop();
         var headerScroll = $('.post-title');
+        var backgroundScroll = $('.hero-overlay');
         if (st < 500) {
+            backgroundScroll.css('background', 'rgba(0,0,0,0)');
             headerScroll.css('opacity', 1 - st / 300);
             headerScroll.css({
                 '-webkit-transform': 'translateY(' + st / 7 + '%)',
@@ -56,6 +62,9 @@ $(document).ready(function() {
                 transform: 'translateY(' + st / 7 + '%)'
             });
         }
+        else {
+        backgroundScroll.css('background','rgba(0, 0, 0, 0.45)');
+    }
     }
 });
 </script>
