@@ -52,9 +52,9 @@ $(document).ready(function() {
     function headerParallax() {
         var st = $(window).scrollTop();
         var headerScroll = $('.post-title');
-        var backgroundScroll = $('.hero-overlay');
+        // var backgroundScroll = $('.hero-overlay');
         if (st < 500) {
-            backgroundScroll.css('background', 'rgba(0,0,0,0)');
+            // backgroundScroll.css('background', 'rgba(0,0,0,0)');
             headerScroll.css('opacity', 1 - st / 300);
             headerScroll.css({
                 '-webkit-transform': 'translateY(' + st / 7 + '%)',
