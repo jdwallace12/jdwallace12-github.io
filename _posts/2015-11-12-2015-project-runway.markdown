@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  What every web designer can learn from Project Runway
-subtitle: What every web designer can learn from Project Runway
+subtitle:
 description:  
 date:   2015-11-12 20:08:05
 categories: web
@@ -11,7 +11,7 @@ author: John Wallace
 author-image: /images/john-wallace.jpg
 author-bio: I love playing outside, fort building, and skiing powder with my wife and dog.  Currently a front end devloper at AppNeta.
 ---
-#{{page.subtitle}}
+#{{page.title}}
 With years of being subjected to crappy and or “girly” television shows due to my wife holding the remote with more gusto and conviction than I do, I have learn to tolerate and flat-out enjoy some of the shows that I would otherwise never watch.   Project Runway is one show that I have really enjoyed watching over the years.  Coming from a web design / development background, I found myself easily relating to all the fashion designers battling it out on the show.  Creating something from nothing is a common “thread” between both fields.  I have noticed many similarities in the processes of design and construction that they both share.  So this 
 
 ###Metaphorical Trips to Mood
