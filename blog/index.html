@@ -4,12 +4,11 @@ body-class: grey-hero
 ---
 
 <div class="ui vertical stripe container segment">
-    <h3 class="ui header">Blog</h3>
+  <!--   <h3 class="ui header">Blog</h3> -->
 
-    <div class="ui two column doubling grid">
+    <div class="ui link cards">
         {% for post in site.posts %}
-        <div class="column">
-            <div class="ui fluid card">
+            <div class="card">
                 <a class="image" href="{{ post.url }}">
                     <img src="{{ post.featured-image }}">
                 </a>
@@ -30,7 +29,7 @@ body-class: grey-hero
 
                 </div>
             </div>
-        </div>
         {% endfor %}
-    </div>
+        </div>
+        
 </div>
