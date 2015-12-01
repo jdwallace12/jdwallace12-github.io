@@ -2,34 +2,44 @@
 layout: default
 body-class: grey-hero
 ---
-
-<div class="ui vertical stripe container segment">
-  <!--   <h3 class="ui header">Blog</h3> -->
-
-    <div class="ui link cards">
+<div class="blog-items">
+    <div class="ui two stackable link cards">
         {% for post in site.posts %}
-            <div class="card">
-                <a class="image" href="{{ post.url }}">
-                    <img src="{{ post.featured-image }}">
-                </a>
-
-                <div class="content">
-                    <a href="{{ post.url }}" class="header">{{ post.title }}</a>
-
-                    <div class="meta">
-                     <span class="date">
+        <div class="card">
+            <a class="image" href="{{ post.url }}">
+                <img src="{{ post.featured-image }}">
+            </a>
+            <div class="content">
+                <a href="{{ post.url }}" class="header">{{ post.title }}</a>
+                <div class="meta">
+                    <span class="date">
                      {{ post.date | date: "%b %-d, %Y" }}
                         </span>
-                    </div>
-                </div>
-                <div class="extra content">
-                  <span>
-                  <i class="tag icon"></i>{{post.categories}}
-                  </span>
-
                 </div>
             </div>
-        {% endfor %}
+            <div class="extra content">
+                <span>
+                  <i class="tag icon"></i>{{post.categories}}
+                  </span>
+            </div>
         </div>
-        
-</div>
+        {% endfor %}
+    </div>
+  </div>
+  <div class="right-sidebar">
+      <h1>Blog</h1>
+        {% for category in site.categories %}
+    <h4>{{ category | first }}</h4>
+      <ul>
+      {% for posts in category %}
+        {% for post in posts %}
+         {% if post.url %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </ul>
+  {% endfor %}
+
+  </div>
+
