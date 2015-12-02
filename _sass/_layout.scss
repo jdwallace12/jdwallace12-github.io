@@ -207,6 +207,7 @@
     .blog-items {
         width: 75.5%;
         padding: 70px 30px;
+        overflow: hidden;
     }
     
     .right-sidebar {
@@ -218,7 +219,7 @@
         background-color: #fff;
         padding: 2%;
         overflow: scroll;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
         min-width: 135px;
     }
     
@@ -231,3 +232,11 @@
     //     z-index: 3;
     //     transition: all 2.5s ease;
     // }
+
+#Container .mix{
+    display: none;
+}
+
+.mix {
+    will-change: transform;
+}
