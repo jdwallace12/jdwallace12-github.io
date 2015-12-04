@@ -6,21 +6,46 @@
             </a>
             <a class="item" href="/#projects-section">Projects</a>
             <a class="item" href="/blog/">Blog</a>
-    
             <h4 class="ui header post-title-scrolled" style="margin: auto;position: transform: translateY(-60px)">
                 <div class="content" style="font-size: 1vw;color: rgba(0, 0, 0, 0.7);">
                     {{ page.title }}
                     <div class="sub header" style="display:inline-block;position: relative;left: 1vw; font-size: .9rem;">{{ page.date | date: "%b %-d, %Y" }}</div>
                 </div>
             </h4>
-     
             <div class="right item">
+                {% if page.url == "/index.html" %}
                 <div class="ui animated fade teal button" id="contact-trigger" tabindex="0">
                     <div class="visible content">Contact Me</div>
                     <div class="hidden content">
                         Don't Be Shy
                     </div>
                 </div>
+                {% else %}
+                    <div class="ui two column grid" id="post-nav">
+                        <div class="column">
+                            {% if page.previous.url %}
+                            <a href="{{page.previous.url}}">
+                                <h4 class="ui header post-title-scrolled" style="margin: auto;position: transform: translateY(-60px)">
+                                    <div class="content" style="font-size: 1vw;color: rgba(0, 0, 0, 0.7);">
+                                        <i class="ui left arrow icon"></i>
+                                    </div>
+                                </h4>
+                            </a>
+                            {% endif %}
+                        </div>
+                        <div class="column">
+                            {% if page.next.url %}
+                                  <a href="{{page.next.url}}">
+                                    <h4 class="ui header post-title-scrolled" style="margin: auto;position: transform: translateY(-60px)">
+                                        <div class="content" style="font-size: 1vw;color: rgba(0, 0, 0, 0.7);">
+                                            <i class="ui right arrow icon"></i>
+                                        </div>
+                                    </h4>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -32,16 +57,17 @@ jQuery(function($) {
     var $win = $(window);
     var winH = $win.height(); // Get the window height.
 
-    $win.on("scroll", function () {
-        if ($(this).scrollTop() > winH ) {
+    $win.on("scroll", function() {
+        if ($(this).scrollTop() > winH) {
             $nav.addClass("visible");
+      
         } else {
             $nav.removeClass("visible");
+          
         }
-    }).on("resize", function(){ // If the user resizes the window
-       winH = $(this).height(); // you'll need the new height value
+    }).on("resize", function() { // If the user resizes the window
+        winH = $(this).height(); // you'll need the new height value
     });
 
 });
-
 </script>

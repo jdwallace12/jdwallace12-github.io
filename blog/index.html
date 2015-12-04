@@ -28,14 +28,14 @@ body-class: gradient
 <div class="right-sidebar">
   <div class="ui two column grid">
     <div class="column">
-      <h2 id="Reset">Categories</h2>
+      <h2>Categories</h2>
     </div>
     <div class="column">
-  
+    
     </div>
   </div>
 
-<div class="ui accordion">
+<div class="ui fluid accordion">
   {% for category in site.categories %}
     <div class="title">
         <i class="dropdown icon"></i>
@@ -62,14 +62,14 @@ body-class: gradient
 </div>
 <script>
 $(function() {
-     $('.ui.accordion').accordion({
-        onClose: function() {  
-          $('#Container').mixItUp('filter', 'all');
+    $('.ui.accordion').accordion({
+        onClose: function() {
+            $('#Container').mixItUp('filter', 'all');
         }
     });
     $('#Container').mixItUp({
-   
+
     });
-});
  
+});
 </script>
