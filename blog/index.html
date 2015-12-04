@@ -27,9 +27,16 @@ body-class: gradient
 </div>
 <div class="right-sidebar">
 <h2 id="Reset">Categories</h2>
-{% for category in site.categories %}
-  <h3 class="filter" data-filter=".{{ category | first }}">{{ category | first }}</h3>
-  <div class="ui relaxed list">
+
+
+
+<div class="ui accordion">
+  {% for category in site.categories %}
+    <div class="title">
+        <i class="dropdown icon"></i>
+        <h3 style="display:inline-block;" class="filter" data-filter=".{{ category | first }}">{{ category | first }}</h3>
+    </div>
+    <div class="content">
       {% for posts in category %}
         {% for post in posts %}
           {% if post.url %}
@@ -42,19 +49,24 @@ body-class: gradient
          {% endif %} 
         {% endfor %}
       {% endfor %}
-  </div>
-{% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+
 </div>
 <script>
 $(function() {
     $('#Container').mixItUp({
-      animation: {
-    enable: false   
-  }
+        animation: {
+            enable: false
+        }
     });
-     $('#Reset').on('click', function() {
+    $('#Reset').on('click', function() {
         $('#Container').mixItUp('filter', 'all');
     });
 });
-
+$('.ui.accordion')
+  .accordion()
+;
 </script>
