@@ -61,15 +61,24 @@ body-class: gradient
 
 </div>
 <script>
+$(document).ready(function(){
 $(function() {
     $('.ui.accordion').accordion({
         onClose: function() {
             $('#Container').mixItUp('filter', 'all');
         }
     });
-    $('#Container').mixItUp({
 
-    });
  
 });
+    $('#Container').mixItUp({
+
+  animation: {
+    duration: 330,
+    effects: 'fade stagger(34ms) translateZ(880px)',
+    easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+  }
+
+    });
+    });
 </script>
