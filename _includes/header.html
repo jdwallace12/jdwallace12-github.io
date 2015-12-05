@@ -22,23 +22,33 @@
                 </div>
                 {% else %}
                     <div class="ui two column grid" id="post-nav">
-                        <div class="column">
+                        <div class="six wide column">
                             {% if page.previous.url %}
                             <a href="{{page.previous.url}}">
                                 <h4 class="ui header post-title-scrolled" style="margin: auto;position: transform: translateY(-60px)">
                                     <div class="content" style="font-size: 1vw;color: rgba(0, 0, 0, 0.7);">
-                                        <i class="ui left arrow icon"></i>
+                                         <div class="ui animated button" tabindex="0">
+  <div class="visible content">Previous</div>
+  <div class="hidden content">
+    <i class="left arrow icon"></i>
+  </div>
+</div>
                                     </div>
                                 </h4>
                             </a>
                             {% endif %}
                         </div>
-                        <div class="column">
+                        <div class="six wide column">
                             {% if page.next.url %}
                                   <a href="{{page.next.url}}">
                                     <h4 class="ui header post-title-scrolled" style="margin: auto;position: transform: translateY(-60px)">
                                         <div class="content" style="font-size: 1vw;color: rgba(0, 0, 0, 0.7);">
-                                            <i class="ui right arrow icon"></i>
+                                           <div class="ui animated button" tabindex="0">
+  <div class="visible content">Next</div>
+  <div class="hidden content">
+    <i class="right arrow icon"></i>
+  </div>
+</div>
                                         </div>
                                     </h4>
                                 </a>
