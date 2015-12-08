@@ -2,67 +2,79 @@
 <div class="ui fullscreen modal" id="appneta-modal">
     <i class="close icon"></i>
     <div class="image content">
-        <div class="ui massive image">
-            <img src="/images/appneta/homepage.png">
-            <img src="/images/appneta/apps-build.png">
-        </div>
-        <div class="ui massive image">
-            <img src="/images/appneta/careers-page.png">
-            <img src="/images/appneta/resource-page.png">
-        </div>
-         <div class="ui massive image">
-            <img src="/images/appneta/open-source.png">
-            <img src="/images/appneta/blog.png">
-        </div>
-        <div class="description">
-            <div class="ui header">AppNeta</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
-    </div>
-</div>
-<!-- end appneta modal -->
-<!-- bumblebean modal -->
-<div class="ui fullscreen modal" id="bumblebean-modal">
-    <i class="close icon"></i>
-    <div class="image content">
-        <div class="ui massive image">
-            <img src="/images/bumblebean/homepage.png">
-            <img src="/images/bumblebean/brands.png">
-        </div>
-         <div class="ui massive image">
-            <img src="/images/bumblebean/product-detail.png">
-            <img src="/images/bumblebean/filters.png">
-        </div>
-        <div class="description">
-            <div class="ui header">Bumblebean</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
+        <div class="ui five column grid">
+            <div class="column">
+                <div class="ui massive image">
+                    <img src="/images/appneta/apm-it.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui massive image">
+                    <img src="/images/appneta/about.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui massive image">
+                    <img src="/images/appneta/careers-page.jpg">
+                </div>
+            </div>
+              <div class="column">
+                <div class="ui massive image">
+                    <img src="/images/appneta/homepage.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="description">
+                    <div class="ui header"><a href="http://www.appneta.com/">AppNeta</a></div>
+                    <p>Design and Development</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<!-- end bumblebean modal -->
-<!-- yogi-jerz modal -->
-<div class="ui fullscreen modal" id="yogi-jerz-modal">
-    <i class="close icon"></i>
-    <div class="image content">
-        <div class="ui massive image">
-             <img src="/images/yogi-jerz-full.jpg">
-        </div>
-        <div class="description">
-            <div class="ui header">Yogi Jerz</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
+    <!-- end appneta modal -->
+    <!-- bumblebean modal -->
+    <div class="ui fullscreen modal" id="bumblebean-modal">
+        <i class="close icon"></i>
+        <div class="image content">
+            <div class="ui massive image">
+                <img src="/images/bumblebean/homepage.png">
+                <img src="/images/bumblebean/brands.png">
+            </div>
+            <div class="ui massive image">
+                <img src="/images/bumblebean/product-detail.png">
+                <img src="/images/bumblebean/filters.png">
+            </div>
+            <div class="description">
+                <div class="ui header">Bumblebean</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
+            </div>
         </div>
     </div>
-</div>
-<!-- end yogi-jerz modal -->
-<script>
-$(document).ready(function() {
-    $('#appneta-modal-trigger').on('click', function() {
-        $('#appneta-modal').modal('show');
+    <!-- end bumblebean modal -->
+    <!-- yogi-jerz modal -->
+    <div class="ui fullscreen modal" id="yogi-jerz-modal">
+        <i class="close icon"></i>
+        <div class="image content">
+            <div class="ui massive image">
+                <img src="/images/yogi-jerz-full.jpg">
+            </div>
+            <div class="description">
+                <div class="ui header">Yogi Jerz</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloremque repudiandae inventore eveniet, sed iusto, eaque voluptates id hic cupiditate saepe. Consequuntur, aspernatur harum eaque quod amet placeat quia nesciunt!</p>
+            </div>
+        </div>
+    </div>
+    <!-- end yogi-jerz modal -->
+    <script>
+    $(document).ready(function() {
+        $('#appneta-modal-trigger').on('click', function() {
+            $('#appneta-modal').modal('show');
+        });
+        $('#bumblebean-modal-trigger').on('click', function() {
+            $('#bumblebean-modal').modal('show');
+        });
+        $('#yogi-jerz-modal-trigger').on('click', function() {
+            $('#yogi-jerz-modal').modal('show');
+        });
     });
-    $('#bumblebean-modal-trigger').on('click', function() {
-        $('#bumblebean-modal').modal('show');
-    });
-    $('#yogi-jerz-modal-trigger').on('click', function() {
-        $('#yogi-jerz-modal').modal('show');
-    });
-});
-</script>
+    </script>
