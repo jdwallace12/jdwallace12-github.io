@@ -7,9 +7,12 @@
     }
     
     .gradient {
-           background: #abbaab;
-    background: -webkit-linear-gradient(to left, #abbaab, white);
-    background: linear-gradient(to left, rgba(171, 186, 171, 0.4), white);
+        background: #4776E6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #4776E6, #8E54E9);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #4776E6, #8E54E9);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     
     section.subsection {
@@ -27,6 +30,15 @@
     
     .masthead .ui.menu .ui.button {
         margin-left: 0.5em;
+    }
+    
+    .site-header .ui.menu {
+        border: none!important;
+        box-shadow: none!important;
+    }
+    
+    .blog-items .ui.cards>.card {
+        box-shadow: none!important;
     }
     
     .masthead h1.ui.header {
@@ -229,11 +241,10 @@
     //     z-index: 3;
     //     transition: all 2.5s ease;
     // }
-
-#Container .mix{
-    display: none;
-}
-
-.mix {
-    will-change: transform;
-}
+    #Container .mix {
+        display: none;
+    }
+    
+    .mix {
+        will-change: transform;
+    }
