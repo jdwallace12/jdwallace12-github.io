@@ -227,7 +227,7 @@ background: linear-gradient(to left, #457fca , #5691c8); /* W3C, IE 10+/ Edge, F
         background-color: #fff;
         padding: 2%;
         overflow: scroll;
-        // box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         min-width: 135px;
         z-index: 105;
     }
