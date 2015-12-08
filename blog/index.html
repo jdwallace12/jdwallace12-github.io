@@ -69,12 +69,14 @@ $(function() {
         }
     });
 
- 
+
 });
     $('#Container').mixItUp({
 
-  animation: {
-    duration: 200
+ animation: {
+    duration: 250,
+    effects: 'fade stagger(26ms) translateZ(-520px)',
+    easing: 'cubic-bezier(0.39, 0.575, 0.565, 1)'
   }
 
     });
