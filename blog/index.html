@@ -57,12 +57,14 @@ body-class: gradient
     </div>
     {% endfor %}
 </div>
-
-
 </div>
 <script>
-$(document).ready(function(){
-$(function() {
+$(document).ready(function() {
+    $('.ui.accordion').accordion({
+        exclusive: true
+    });
+
+
     $('.ui.accordion').accordion({
         onClose: function() {
             $('#Container').mixItUp('filter', 'all');
@@ -70,15 +72,14 @@ $(function() {
     });
 
 
-});
     $('#Container').mixItUp({
 
- animation: {
-    duration: 250,
-    effects: 'fade stagger(26ms) translateZ(-520px)',
-    easing: 'cubic-bezier(0.39, 0.575, 0.565, 1)'
-  }
+        animation: {
+            duration: 250,
+            effects: 'fade stagger(26ms) translateZ(-520px)',
+            easing: 'cubic-bezier(0.39, 0.575, 0.565, 1)'
+        }
 
     });
-    });
+});
 </script>
