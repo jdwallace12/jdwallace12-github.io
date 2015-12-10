@@ -35,7 +35,7 @@ body-class: gradient
     </div>
   </div>
 
-<div class="ui fluid accordion">
+<div class="ui fluid accordion" id="blog-filter">
   {% for category in site.categories %}
     <div class="title filter" data-filter=".{{ category | first }}">
         <i class="dropdown icon"></i>
@@ -45,12 +45,10 @@ body-class: gradient
       {% for posts in category %}
         {% for post in posts %}
           {% if post.url %}
-          <div class="item">
-            <div class="content">
+        
                 <a class="header" href="{{ post.url }}">{{ post.title }}</a>
                 <div class="description">{{ post.date | date: "%b %-d, %Y" }}</div>
-            </div>
-          </div>
+         
          {% endif %} 
         {% endfor %}
       {% endfor %}
@@ -60,18 +58,20 @@ body-class: gradient
 </div>
 <script>
 $(document).ready(function() {
-    $('.ui.accordion').accordion({
-        exclusive: true
+    $('#blog-filter').accordion({
+        exclusive: true,
+        collapsible: true
     });
 
 
-    $('.ui.accordion').accordion({
+    $('#blog-filter').accordion({
         onClose: function() {
             $('#Container').mixItUp('filter', 'all');
         }
     });
 
-
+      
+  
     $('#Container').mixItUp({
 
         animation: {
