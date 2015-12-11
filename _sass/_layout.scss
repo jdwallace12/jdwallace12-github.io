@@ -7,13 +7,12 @@
     }
     
     .gradient {
-        
-
-
-background: #00d2ff; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            
+        background: #00d2ff;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #00d2ff, #3a7bd5);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #00d2ff, #3a7bd5);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     
     section.subsection {
@@ -33,12 +32,16 @@ background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, F
         margin-left: 0.5em;
     }
     
-    .site-header {
-        transition: all .2s ease;
-        z-index: 9;
-        &.nav-up {
-           opacity: 0;
-        }
+    
+    .slideIn {
+       opacity: 1;
+        transition: all .3s ease;
+    }
+    
+    .slideOut {
+       opacity: 0;
+        transition: all .3s ease;
+        transform: translateY(-20px);
     }
     
     .site-header .ui.menu {
