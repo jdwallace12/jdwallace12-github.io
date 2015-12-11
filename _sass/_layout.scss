@@ -34,12 +34,18 @@
     
     .slideIn {
         opacity: 1;
-        transition: all .3s ease;
+        transition: all .25s ease;
+    }
+    
+    .site-header {
+        will-change: opacity;
+        position: relative;
+        z-index: 999;
     }
     
     .slideOut {
         opacity: 0;
-        transition: all .3s ease;
+        transition: all .25s ease;
     }
     
     .site-header .ui.menu {
@@ -240,7 +246,6 @@
         min-width: 135px;
         z-index: 105;
     }
-
     
     // .hero-overlay {
     //     opacity: 1;
