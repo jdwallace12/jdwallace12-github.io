@@ -81,11 +81,13 @@ $(document).ready(function() {
         },
         onClosing: function() {
             $('#blog-filter > .content.inner').removeClass('active');
+                $('#blog-filter > .content.inner').addClass('hidden');
             $('#Container').mixItUp('filter', 'all');
              
         }, 
         onOpening: function() {
             $('.content.inner').removeClass('active');
+             $('.content.inner').addClass('hidden');
         }
 
     });
