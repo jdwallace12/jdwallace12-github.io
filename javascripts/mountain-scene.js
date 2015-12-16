@@ -41,7 +41,7 @@ $(document).ready(function() {
     // build scene
     var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger",
-        duration: 400,
+        duration: 450,
         offset: 0
     })
 
