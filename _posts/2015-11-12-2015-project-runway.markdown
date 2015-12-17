@@ -11,8 +11,6 @@ author: John Wallace
 author-image: /images/john-wallace.jpg
 author-bio: I love playing outside, fort building, and skiing powder with my wife and dog.  Currently a front end devloper at AppNeta.
 ---
-#{{page.title}}
- 
 With years of being subjected to crappy and/or “girly” television shows due to my wife holding the remote with more gusto and conviction than I do, I have learned to tolerate and flat-out enjoy some of the shows that I would otherwise never watch.   Project Runway is one show that I have really enjoyed watching over the years.  Coming from a web design/development background, I found myself easily relating to all the fashion designers battling it out on the show.  Creating something from nothing is a common “thread” between both fields and they share similar processes and pitfalls.
 
 ##Metaphorical Trips to Mood
@@ -39,4 +37,4 @@ Most seasons there is often a bête noire in the mix and thanks to some quality 
 
 ##The Importance of Tim Gunn
 
-Tim Gunn is a neutral mentor to all the designers and will often cause them to rethink their look midway through the challenge.  Having a knowledgeable person look at your work with a discerning eye is immensely beneficial.  Tim Gunn is known to guide you to realizations you make on your own without being told directly what to do.  He will make the contestants think and look at their work critically bringing on a refinement of the garment.  It is great to have someone lead you to your own little breakthroughs.  Some struggle is good for you but it is reassuring that you have someone to lead the way.
+Tim Gunn is a neutral mentor to all the designers and will often cause them to rethink their look midway through the challenge. Having a knowledgeable person look at your work with a discerning eye is immensely beneficial. Tim Gunn is known to guide you to realizations you make on your own without being told directly what to do. He will make the contestants think and look at their work critically bringing on a refinement of the garment. It is great to have someone lead you to your own little breakthroughs. Some struggle is good for you but it is reassuring that you have someone to lead the way. So be grateful for any mentoring you can receive from anyone with more experience.
