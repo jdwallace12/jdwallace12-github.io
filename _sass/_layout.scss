@@ -7,20 +7,21 @@
     }
     
     .gradient {
-
-
-background: #232526; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+        background: #232526;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #232526, #414345);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #232526, #414345);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
+    
     .ui.accordion .title:not(.ui) {
         transition: all .3s ease;
         &:hover {
-        color:#eb586f;
+            color: #eb586f;
         }
     }
-
+    
     section.subsection {
         padding-top: 30px 0px;
     }
@@ -166,11 +167,13 @@ background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, F
     .post-title h1.header {
         color: #ffffff;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-        font-size: 2.6rem;
-        margin-top: 39vh;
-        //text-transform: capitalize;
+        font-size: 2.9rem;
+        font-style: italic;
+        font-weight: 100;
+        margin-top: 66%;
+        font-family: 'lora'!important;
         text-align: center;
-        font-variant: small-caps;
+        text-transform: capitalize;
         @media (max-width: 980px) {
             font-size: 3rem
         }
@@ -198,9 +201,9 @@ background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, F
             margin-top: 4rem;
         }
         &.date {
-            font-style: oblique;
-            font-size: 1.3rem;
-            text-transform: uppercase;
+            font-size: 15px;
+            font-family: 'lora';
+            letter-spacing: 2px;
         }
     }
     
