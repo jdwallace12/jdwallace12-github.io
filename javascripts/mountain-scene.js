@@ -57,8 +57,8 @@ $(document).ready(function() {
             triggerElement: "#trees",
                offset: -240
         })
-        .setTween("#trees", 3, {
-            scale: 2,
+        .setTween("#trees", 2, {
+            scale: 1.4,
             opacity: 1
         }) // trigger a TweenMax.to tween
        
