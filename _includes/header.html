@@ -6,6 +6,14 @@
             </a>
             <a class="item" href="/#projects-section">Work</a>
             <a class="item" href="/blog/">Blog</a>
+            <div class="item">
+                <form class="ui event">
+                    <div class="ui toggle checkbox" data-method="toggle" id="snow-toggle">
+                      <input type="checkbox">
+                      <label>Snow</label>
+                    </div>
+                </form>
+            </div>
             <h4 class="ui header post-title-scrolled" style="margin: auto;position: transform: translateY(-60px)">
                 <div class="content" style="font-size: 1.2vw;color: rgba(0, 0, 0, 0.7);">
                     {{ page.title }}
@@ -60,7 +68,7 @@
         </div>
     </div>
 </header>
-<script type="text/javascript">
+<script>
 jQuery(function($) {
 
     var $nav = $('.post-title-scrolled');
@@ -80,4 +88,14 @@ jQuery(function($) {
     });
 
 });
+$('#snow-toggle').checkbox({
+    onChecked: function() {
+      $('#snow').show();
+    },
+    onUnchecked: function() {
+      $('#snow').hide();
+    }
+  });
+
 </script>
+
