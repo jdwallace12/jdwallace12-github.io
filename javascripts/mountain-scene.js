@@ -55,10 +55,10 @@ $(document).ready(function() {
     // build scene
     var scene = new ScrollMagic.Scene({
             triggerElement: "#trees",
-               offset: -230
+               offset: -200
         })
-        .setTween("#trees", 5, {
-            scale: 2.5,
+        .setTween("#trees", 3, {
+            scale: 2,
             opacity: 1
         }) // trigger a TweenMax.to tween
        
