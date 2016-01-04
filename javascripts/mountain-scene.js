@@ -42,7 +42,7 @@ $(document).ready(function() {
     var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger",
         duration: 400,
-        offset: 300
+        offset: 230
     })
 
     .setPin("#target")
