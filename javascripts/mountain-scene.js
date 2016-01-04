@@ -49,4 +49,18 @@ $(document).ready(function() {
         .setTween(tween)
         // .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
+
+
+
+    // build scene
+    var scene = new ScrollMagic.Scene({
+            triggerElement: "#trees",
+               offset: -230
+        })
+        .setTween("#trees", 5, {
+            scale: 2.5,
+            opacity: 1
+        }) // trigger a TweenMax.to tween
+       
+        .addTo(controller);
 });
