@@ -4,6 +4,9 @@
     #snow {
         display: none;
     }
+    #snow-toggle input:focus:checked~label:before {
+    background-color: #00B5AD!important;
+}
     section.section {
         padding: 8rem 0px;
     }
