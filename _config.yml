@@ -10,5 +10,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+social_is_enabled: false
+
 # Build settings
 markdown: kramdown
