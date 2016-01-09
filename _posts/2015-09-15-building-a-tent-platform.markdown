@@ -6,6 +6,7 @@ description:
 date:   2015-09-16 20:08:05
 categories: forts
 featured-image: /images/tent.jpg
+thumbnail-image: /images/tent.jpg
 comments: true
 author: John Wallace
 author-image: /images/john-wallace.jpg

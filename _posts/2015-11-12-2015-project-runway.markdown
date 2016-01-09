@@ -6,6 +6,7 @@ description:
 date:   2015-11-12 20:08:05
 categories: web
 featured-image: http://24.media.tumblr.com/b0f61c6e26906f0de4b8b87d717bcc2a/tumblr_n3es6ippW81smcbm7o1_500.gif
+thumbnail-image: http://24.media.tumblr.com/b0f61c6e26906f0de4b8b87d717bcc2a/tumblr_n3es6ippW81smcbm7o1_500.gif
 comments: true
 author: John Wallace
 author-image: /images/john-wallace.jpg

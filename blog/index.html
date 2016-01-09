@@ -7,7 +7,7 @@ body-class: gradient
       {% for post in site.posts %}
         <div class="card mix {{post.categories}}">
             <a class="image" href="{{ post.url }}">
-                <img src="{{ post.featured-image }}">
+                <img src="{{ post.thumbnail-image }}">
             </a>
             <div class="content">
                 <a href="{{ post.url }}" class="header">{{ post.title }}</a>
