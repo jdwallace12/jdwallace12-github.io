@@ -22,6 +22,9 @@ Main components
     margin-bottom: 2em;
     a {
         color: #4AA0D5;
+        background: rgba(255, 255, 255, 0.54);
+        padding: 10px;
+        border-radius: 3px;
     }
     &::before {
         /* this is the vertical line */
@@ -139,7 +142,7 @@ Main components
     margin-left: 60px;
     background: white;
     border-radius: 0.25em;
-    padding: 1em;
+    padding: 0px;
     box-shadow: 0 1px 5px #678F7D;
     &:after {
         content: "";
