@@ -22,7 +22,7 @@ Main components
     margin-bottom: 2em;
     a {
         color: #4AA0D5;
-        background: rgba(255, 255, 255, 0.54);
+        background: #ffffff;
         padding: 10px;
         border-radius: 3px;
     }
@@ -224,7 +224,7 @@ Main components
         .cd-date {
             position: absolute;
             width: 100%;
-            left: 128%;
+            left: 108%;
             top: 6px;
             font-size: 16px;
             font-size: 1rem;
@@ -244,7 +244,7 @@ Main components
         }
         .cd-date {
             left: auto;
-            right: 128%;
+            right: 108%;
             text-align: right;
         }
     }
