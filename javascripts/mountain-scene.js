@@ -41,8 +41,8 @@ $(document).ready(function() {
     // build scene
     var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger",
-        duration: 350,
-        offset: 130
+        duration: 330,
+        offset: 100
     })
 
     .setPin("#target")
@@ -55,10 +55,10 @@ $(document).ready(function() {
     // build scene
     var scene = new ScrollMagic.Scene({
             triggerElement: "#trees",
-               offset: -300
+               offset: -100
         })
         .setTween("#trees", 2, {
-            scale: 1.4,
+            scale: 1.3,
             opacity: 1
         }) // trigger a TweenMax.to tween
        
