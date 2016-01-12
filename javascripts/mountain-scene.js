@@ -41,8 +41,8 @@ $(document).ready(function() {
     // build scene
     var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger",
-        duration: 400,
-        offset: 230
+        duration: 350,
+        offset: 130
     })
 
     .setPin("#target")
@@ -55,7 +55,7 @@ $(document).ready(function() {
     // build scene
     var scene = new ScrollMagic.Scene({
             triggerElement: "#trees",
-               offset: -200
+               offset: -300
         })
         .setTween("#trees", 2, {
             scale: 1.4,
