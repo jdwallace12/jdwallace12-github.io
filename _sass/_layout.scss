@@ -1,11 +1,9 @@
     #trees {
         opacity: 0;
     }
-    
     #snow {
         display: none;
     }
-    
     section.section {
         padding: 8rem 0px;
     }
@@ -15,20 +13,19 @@
     }
     
     .gradient {
-        background: #003973;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #003973, #E5E5BE);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #003973, #E5E5BE);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+background: #003973; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #003973 , #E5E5BE); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #003973 , #E5E5BE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
     }
     
-    .gradient-overlay {
-        
-background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");
+        .gradient-overlay {
+
+background-image: url("http://www.transparenttextures.com/patterns/subtle-dots.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     }
-    
     .ui.accordion .title:not(.ui) {
         transition: all .3s ease;
         &:hover {
@@ -57,10 +54,11 @@ background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png
         opacity: 1;
         transition: all .3s ease;
     }
-    
-    .slideOut {
+     .slideOut {
         opacity: 0;
         transition: all .3s ease;
+     
+
     }
     
     .site-header {
@@ -68,6 +66,8 @@ background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png
         position: relative;
         z-index: 9;
     }
+    
+   
     
     .site-header .ui.menu {
         box-shadow: none!important;
@@ -167,7 +167,7 @@ background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png
             width: 28px;
         }
     }
-    
+
     .post-title {
         position: relative;
         // padding: 10%;
@@ -292,7 +292,7 @@ background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png
     .mix {
         will-change: transform;
     }
-    
+
     .ui.text.container p {
         line-height: 1.6;
     }
