@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The $60 Closet Organizer Standing Desk
+title:  The Shitty $60 Closet Organizer Standing Desk
 subtitle: Building a standing desk
 description: Sitting all day can put a lot of strain on your body and there are numerous studies showing the negative affects on the body.  I have also heard of studies claiming the opposite and claiming that standing can causing stress to your legs and is worst than sitting. 
 date:   2016-01-9 20:08:05
