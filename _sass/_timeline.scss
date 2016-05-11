@@ -138,6 +138,8 @@ Main components
 }
 
 .cd-timeline-content {
+    display: flex;
+    display: -webflex;
     position: relative;
     margin-left: 60px;
     background: white;
@@ -210,7 +212,7 @@ Main components
 @media only screen and (min-width: 1170px) {
     .cd-timeline-content {
         margin-left: 0;
-        padding: 1em;
+        padding: 20px;
         width: 45%;
         &::before {
             top: 24px;

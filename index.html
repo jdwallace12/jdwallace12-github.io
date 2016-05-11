@@ -63,11 +63,13 @@ layout: default
             <div class="cd-timeline-block">
                 <div class="cd-timeline-content">
                     <a href="{{ post.url }}">
-                        <img class="blogroll-fetaure-image" src="{{ post.thumbnail-image }}" />
+                        <img class="ui medium image" src="{{ post.thumbnail-image }}" />
                     </a>
-                    <h2><a href="{{ post.url }}" class="header">{{ post.title }}</a></h2>
+                      <div class="title">
+                    <h1 class="ui header"><a href="{{ post.url }}" class="header">{{ post.title }}</a></h1>
                     <p>{{ post.description}}</p>
                     <span class="cd-date"><a href="{{ post.url}}">{{ post.date | date: "%b %-d, %Y" }}</a></span>
+                </div>
                 </div>
             </div>
             {% endfor %}

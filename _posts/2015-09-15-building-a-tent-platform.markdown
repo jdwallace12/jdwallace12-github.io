@@ -2,7 +2,7 @@
 layout: post
 title:  You are never too old to build forts
 subtitle: Building a Wall Tent Platform
-description: I have always wanted to build some sort of fort at Kezar but have never gotten around to doing do since most of my time is spent lazing around the lake. The show Treehouse Masters did get me jazzed to build something on the land this year. Initially, I wanted to build a treehouse but researching treehouse construction and the costs, I decided I needed a lower budget alternative.
+description: I have always wanted to build some sort of fort at Kezar but have never gotten around to doing do since most of my time is spent lazing around the lake. The show Treehouse Masters did get me jazzed to build something on the land this year.
 date:   2015-09-16 20:08:05
 categories: forts
 featured-image: /images/tent.jpg
