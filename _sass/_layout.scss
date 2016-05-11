@@ -15,14 +15,8 @@
     }
     
     .gradient {
-        background: #003973;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #003973, #E5E5BE);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #003973, #E5E5BE);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #ffffff;
     }
-    
     
     .ui.accordion .title:not(.ui) {
         transition: all .3s ease;
@@ -65,10 +59,6 @@
     }
     
     .site-header .ui.menu {
-        box-shadow: none!important;
-    }
-    
-    .blog-items .ui.cards>.card {
         box-shadow: none!important;
     }
     
@@ -115,6 +105,16 @@
     
     .ui.vertical.stripe .horizontal.divider {
         margin: 3em 0em;
+    }
+    
+    .blog-items .ui.cards>.card {
+        box-shadow: none!important;
+        border-bottom: 2px solid #f5f5f5;
+        transition: all .25s;
+        &:hover {
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+            border-bottom: 2px solid #dedede!important;
+        }
     }
     
     .quote.stripe.segment {
@@ -268,7 +268,7 @@
         right: 0px;
         background-color: #fff;
         padding: 1% 2%;
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         min-width: 135px;
         z-index: 105;
     }
